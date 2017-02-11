@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_action_bar" />
+
+    <ScrollView
+            android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+            <LinearLayout
+                android:id="@+id/layout_setting_profile"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/set_layout_height"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_10" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/txt_base"
+                        android:layout_width="match_parent"
+                        android:text="@string/profile"
+                        android:textSize="@dimen/sp_14" />
+
+                    <TextView
+                        android:paddingRight="5dp"
+                        style="@style/txt_sub_base"
+                        android:visibility="visible"
+                        android:layout_marginTop="@dimen/dp_3"
+                        android:text="Edit, Update profile details, upload profile video and audio message, set profile avatar."
+                        android:textSize="@dimen/sp_10" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:contentDescription="@null"
+                    android:src="@drawable/set_next" />
+            </LinearLayout>
+
+            <View style="@style/set_view" />
+
+            <LinearLayout
+                android:id="@+id/layout_setting_filters"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/set_layout_height"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_10" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/txt_base"
+                        android:layout_width="match_parent"
+                        android:text="@string/filters"
+                        android:textSize="@dimen/sp_14" />
+
+                    <TextView
+                        style="@style/txt_sub_base"
+                        android:layout_marginTop="@dimen/dp_3"
+                        android:text="Apply filters result filters for Match Finder"
+                        android:textSize="@dimen/sp_10" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:contentDescription="@null"
+                    android:src="@drawable/set_next" />
+            </LinearLayout>
+
+            <View style="@style/set_view" />
+
+            <LinearLayout
+                android:id="@+id/layout_setting_premium_membership"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/set_layout_height"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_10" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/txt_base"
+                        android:layout_width="match_parent"
+                        android:text="@string/premium_membership"
+                        android:textSize="@dimen/sp_14" />
+
+                    <TextView
+                        style="@style/txt_sub_base"
+                        android:layout_marginTop="@dimen/dp_3"
+                        android:text="Activate Premium Membership feature."
+                        android:textSize="@dimen/sp_10" />
+                </LinearLayout>
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:contentDescription="@null"
+                    android:src="@drawable/set_next" />
+            </LinearLayout>
+
+            <View style="@style/set_view" />
+
+            <LinearLayout
+                    android:id="@+id/layout_setting_share"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/set_layout_height"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp_10" >
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                    <TextView
+                            style="@style/txt_base"
+                            android:layout_width="match_parent"
+                            android:text="Share N2HIM"
+                            android:textSize="@dimen/sp_14" />
+
+                    <TextView
+                            style="@style/txt_sub_base"
+                            android:layout_marginTop="@dimen/dp_3"
+                            android:text="Share N2HIM app"
+                            android:textSize="@dimen/sp_10" />
+                </LinearLayout>
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:contentDescription="@null"
+                        android:src="@drawable/set_next" />
+            </LinearLayout>
+
+            <View style="@style/set_view" />
+
+            <LinearLayout
+                    android:id="@+id/layout_setting_contactus"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/set_layout_height"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp_10" >
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                    <TextView
+                            style="@style/txt_base"
+                            android:layout_width="match_parent"
+                            android:text="Contact N2HIM"
+                            android:textSize="@dimen/sp_14" />
+
+                    <TextView
+                            style="@style/txt_sub_base"
+                            android:layout_marginTop="@dimen/dp_3"
+                            android:text="For any query/suggestion/feedback please contact at support@n2him.com"
+                            android:textSize="@dimen/sp_10" />
+                </LinearLayout>
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:contentDescription="@null"
+                        android:src="@drawable/set_next" />
+            </LinearLayout>
+
+            <View style="@style/set_view" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,230 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+
+
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+
+        <!--<item name="android:alertDialogStyle">@style/CustomDialogTheme</item>-->
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+
+
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="txt_name">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="edit_txt">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:padding">@dimen/dp_5</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="edit">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:padding">@dimen/dp_5</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_1</item>
+        <item name="android:background">@color/view_color</item>
+    </style>
+
+    <style name="abt_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/dp_5</item>
+        <item name="android:layout_marginBottom">@dimen/dp_5</item>
+        <item name="android:background">@drawable/set_separator</item>
+    </style>
+
+    <style name="set_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/set_separator</item>
+    </style>
+
+    <style name="view_vetical">
+        <item name="android:layout_width">@dimen/dp_1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/profile_tap_seprator_color</item>
+    </style>
+
+    <style name="btn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:padding">@dimen/dp_10</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:background">@color/btn_color</item>
+    </style>
+
+    <style name="img_home">
+        <item name="android:layout_width">@dimen/dp_35</item>
+        <item name="android:layout_height">@dimen/dp_35</item>
+        <item name="android:padding">@dimen/dp_5</item>
+    </style>
+
+    <style name="img_home1">
+        <item name="android:layout_width">@dimen/dp_20</item>
+        <item name="android:layout_height">@dimen/dp_20</item>
+        <item name="android:layout_margin">2dp</item>
+    </style>
+
+    <style name="txt_base">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="txt_sub_base">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:textColor">#7278A4</item>
+    </style>
+
+    <style name="layout_home">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/dp_5</item>
+        <item name="android:layout_weight">.20</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="txt_profile_below_tap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/dp_4</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+
+    <style name="img_menu">
+        <item name="android:layout_width">@dimen/dp_80</item>
+        <item name="android:layout_height">@dimen/dp_80</item>
+        <item name="android:background">@drawable/menu_selector</item>
+    </style>
+
+    <style name="Transparent" parent="@android:style/Theme.DeviceDefault.Light.NoActionBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="layout_profile">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">@dimen/dp_5</item>
+    </style>
+
+    <style name="edit_profile">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/dp_10</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:editable">false</item>
+        <item name="android:background">@drawable/outline_profile</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:focusableInTouchMode">false</item>
+    </style>
+    <style name="switch_dark">
+        <item name="track">@drawable/switch_track_holo_dark</item>
+        <item name="thumb">@drawable/switch_inner_holo_dark</item>
+        <item name="textOn">ON</item>
+        <item name="textOff">OFF</item>
+        <item name="thumbTextPadding">12dip</item>
+        <item name="switchMinWidth">96dip</item>
+        <item name="switchPadding">16dip</item>
+        <item name="switchTextAppearance">@style/TextAppearance</item>
+    </style>
+
+    <!--<style name="CustomDialogTheme" parent="">
+        <item name="android:windowTitleStyle">@style/dialog_title_style</item>
+    </style>
+
+    <style name="dialog_title_style" parent="android:Widget.TextView">
+        <item name="android:background">@color/com_facebook_blue</item>
+        <item name="android:padding">10dp</item>
+    </style>-->
+
+    <!--<style name="CustomDialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:bottomBright">@color/white</item>
+        <item name="android:bottomDark">@color/white</item>
+        <item name="android:bottomMedium">@color/white</item>
+        <item name="android:centerBright">@color/white</item>
+        <item name="android:centerDark">@color/white</item>
+        <item name="android:centerMedium">@color/white</item>
+        <item name="android:fullBright">@color/com_facebook_blue</item>
+        <item name="android:fullDark">@color/com_facebook_blue</item>
+        <item name="android:topBright">@color/blue</item>
+        <item name="android:topDark">@color/blue</item>
+    </style>-->
+
+    <!--<style name="mySwitchStyle">
+        <item name="track">@drawable/switch_track_green</item>
+        <item name="thumb">@drawable/background_fenced</item>
+        <item name="switchTextAppearanceAttrib">@style/mySwitchTextAppearance</item>
+        <item name="textOn">ON</item>
+        <item name="textOff">OFF</item>
+        <item name="pushStyle">false</item>
+        <item name="textOnThumb">true</item>
+        <item name="thumbExtraMovement">0dp</item>
+        <item name="thumbTextPadding">6dp</item>
+        <item name="trackTextPadding">6dp</item>
+        <item name="switchMinWidth">69dp</item>
+        <item name="switchMinHeight">36dp</item>
+        <item name="switchPadding">6dp</item>
+    </style>-->
+
+    <!--<style name="mySwitchTextAppearance">
+        <item name="textColor">#ffffff</item>
+        <item name="textColorHighlight">#FFeeFFee</item>
+        <item name="textColorHint">#FFeeFFee</item>
+        <item name="textColorLink">#FFeeFFee</item>
+        <item name="textSize">16sp</item>
+        <item name="textStyle">normal</item>
+    </style>-->
+
+</resources>

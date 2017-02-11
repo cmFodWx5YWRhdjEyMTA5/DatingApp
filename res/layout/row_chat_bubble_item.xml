@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res/com.digitalforce.datingapp"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+            android:padding="5dp"
+            android:id="@+id/left_chat_layout"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+        <com.digitalforce.datingapp.widgets.RoundedImageView
+                android:layout_weight="0"
+                android:id="@+id/left_img_member"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="@dimen/dp_60"
+                android:contentDescription="@null"
+                android:src="@drawable/farhan"
+                app:border="true"
+                app:border_color="@color/white"
+                app:border_width="3dp"
+                app:shadow="true" />
+
+        <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp"
+                android:background="@drawable/left_bub"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/left_user_name"
+                        android:textSize="@dimen/chat_user_header_size"
+                        android:textStyle="bold"
+                        android:textColor="@color/chat_user_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                <ImageView
+                        android:layout_weight="0"
+                        android:layout_marginRight="2dp"
+                        android:src="@drawable/time_icon"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="@dimen/time_width"
+                        android:layout_height="@dimen/time_width"/>
+                <TextView
+                        android:id="@+id/left_chat_time"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"
+                        android:textSize="12sp"
+                        android:textColor="@color/chat_user_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <TextView
+                    android:paddingTop="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/left_txtv_chat_msg"
+                    android:textSize="@dimen/chat_text_size"
+                    android:textColor="@color/chat_text_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            <ImageView android:id="@+id/left_imgv_chat_img"
+                       android:paddingTop="5dp"
+                       android:layout_width="@dimen/send_img_width"
+                       android:layout_height="@dimen/send_img_height"/>
+            <ImageView android:id="@+id/left_emotion_img"
+                       android:paddingTop="5dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"/>
+
+            <ImageView android:id="@+id/left_media_img"
+                       android:layout_gravity="center_horizontal"
+                       android:paddingTop="5dp"
+                       android:src="@drawable/ic_action_play"
+                       android:layout_width="@dimen/player_img_width"
+                       android:layout_height="@dimen/player_img_height"/>
+
+         </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:padding="5dp"
+            android:id="@+id/right_chat_layout"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="8dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/right_bub"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/right_user_name"
+                        android:textSize="@dimen/chat_user_header_size"
+                        android:textStyle="bold"
+                        android:textColor="@color/chat_user_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                <ImageView
+                        android:layout_weight="0"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="2dp"
+                        android:src="@drawable/time_icon"
+                        android:layout_width="@dimen/time_width"
+                        android:layout_height="@dimen/time_width"/>
+                <TextView
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/right_chat_time"
+                        android:textSize="12sp"
+                        android:textColor="@color/chat_user_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <TextView
+                    android:paddingTop="5dp"
+                    android:textColor="@color/chat_text_color"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/right_txtv_chat_msg"
+                    android:textSize="@dimen/chat_text_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            <ImageView android:id="@+id/right_imgv_chat_img"
+                       android:paddingTop="5dp"
+                       android:layout_width="@dimen/send_img_width"
+                       android:layout_height="@dimen/send_img_height"/>
+            <ImageView android:id="@+id/right_emotion_img"
+                       android:paddingTop="5dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"/>
+            <ImageView android:id="@+id/right_media_img"
+                       android:layout_gravity="center_horizontal"
+                       android:paddingTop="5dp"
+                       android:src="@drawable/ic_action_play"
+                       android:layout_width="@dimen/player_img_width"
+                       android:layout_height="@dimen/player_img_height"/>
+
+        </LinearLayout>
+        <com.digitalforce.datingapp.widgets.RoundedImageView
+                android:layout_weight="0"
+                android:id="@+id/right_img_member"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="@dimen/dp_60"
+                android:contentDescription="@null"
+                android:src="@drawable/farhan"
+                app:border="true"
+                app:border_color="@color/white"
+                app:border_width="3dp"
+                app:shadow="true" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res/com.digitalforce.datingapp"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <include
+            layout="@layout/layout_action_bar"/>
+
+    <de.ankri.views.Switch
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="5dp"
+            style="@style/switch_dark"
+            android:id="@+id/btn_enable_disable"
+            />
+
+    <TextView
+            style="@style/txt_base"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/outline_search"
+            android:gravity="center"
+            android:padding="5dp"
+            android:singleLine="false"
+            android:text="Manage who and what you see in your match finder tiles"
+            android:textSize="16sp" />
+
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+        <LinearLayout  android:paddingTop="5dp" android:paddingBottom="5dp" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+           <!-- <LinearLayout
+                    style="@style/layout_profile" >
+
+                <TextView
+                        style="@style/txt_base"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:padding="@dimen/dp_5"
+                        android:text="Enable/Disable Filter"
+                        android:textSize="@dimen/sp_14" />
+                <com.digitalforce.datingapp.widgets.CustomSwitch
+                        android:layout_weight="1"
+                        android:id="@+id/switch21"
+                        style="@style/mySwitchStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginTop="4dp"
+                        android:gravity="right"
+                        mySwitch:orientation="horizontal"
+                        mySwitch:textOff="Disable"
+                        mySwitch:textOn="Enable"
+                        mySwitch:textOnThumb="false"
+                        mySwitch:thumb="@drawable/gold1"
+                        mySwitch:track="@drawable/switch_track" />
+
+            </LinearLayout>-->
+
+            <LinearLayout
+                    style="@style/layout_profile" >
+
+                <TextView
+                        style="@style/txt_base"
+                        android:layout_width="0dp"
+                        android:layout_weight=".40"
+                        android:padding="@dimen/dp_5"
+                        android:text="Min Age"
+                        android:textSize="@dimen/sp_14" />
+                <EditText
+                        android:id="@+id/edtv_min_age"
+                        style="@style/edit_profile"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:focusableInTouchMode="false"
+                        android:hint="Min Age" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                    style="@style/layout_profile" >
+
+                <TextView
+                        style="@style/txt_base"
+                        android:layout_width="0dp"
+                        android:layout_weight=".40"
+                        android:padding="@dimen/dp_5"
+                        android:text="Max Age"
+                        android:textSize="@dimen/sp_14" />
+                <EditText
+                        android:id="@+id/edtv_max_age"
+                        style="@style/edit_profile"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:focusableInTouchMode="false"
+                        android:hint="Max Age" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                    style="@style/layout_profile" >
+
+                <TextView
+                        style="@style/txt_base"
+                        android:layout_width="0dp"
+                        android:layout_weight=".40"
+                        android:padding="@dimen/dp_5"
+                        android:text="Ethnicity"
+                        android:textSize="@dimen/sp_14" />
+
+                <EditText
+                        android:id="@+id/edtv_ethnicity"
+                        style="@style/edit_profile"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:focusableInTouchMode="false"
+                        android:hint="Ethnicity" />
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                    style="@style/layout_profile" >
+
+                <TextView
+                        style="@style/txt_base"
+                        android:layout_width="0dp"
+                        android:layout_weight=".40"
+                        android:padding="@dimen/dp_5"
+                        android:text="Min Weight"
+                        android:textSize="@dimen/sp_14" />
+
+                <EditText
+                        android:id="@+id/edtv_min_weight"
+                        style="@style/edit_profile"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:focusableInTouchMode="false"
+                        android:hint="Min Weight" />
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                    style="@style/layout_profile" >
+                <TextView
+                        style="@style/txt_base"
+                        android:layout_width="0dp"
+                        android:layout_weight=".40"
+                        android:padding="@dimen/dp_5"
+                        android:text="Max Weight"
+                        android:textSize="@dimen/sp_14" />
+                <EditText
+                        android:id="@+id/edtv_max_weight"
+                        style="@style/edit_profile"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:focusableInTouchMode="false"
+                        android:hint="Max Weight" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                    style="@style/layout_profile" >
+
+                <TextView
+                        style="@style/txt_base"
+                        android:layout_width="0dp"
+                        android:layout_weight=".40"
+                        android:padding="@dimen/dp_5"
+                        android:text="Min Height"
+                        android:textSize="@dimen/sp_14" />
+                <EditText
+                        android:id="@+id/edtv_min_height"
+                        style="@style/edit_profile"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:focusableInTouchMode="false"
+                        android:hint="Min Height" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                    style="@style/layout_profile" >
+                <TextView
+                        style="@style/txt_base"
+                        android:layout_width="0dp"
+                        android:layout_weight=".40"
+                        android:padding="@dimen/dp_5"
+                        android:text="Max Height"
+                        android:textSize="@dimen/sp_14" />
+                <EditText
+                        android:id="@+id/edtv_max_height"
+                        style="@style/edit_profile"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:focusableInTouchMode="false"
+                        android:hint="Max Height" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                    style="@style/layout_profile" >
+
+                <TextView
+                        style="@style/txt_base"
+                        android:layout_width="0dp"
+                        android:layout_weight=".40"
+                        android:padding="@dimen/dp_5"
+                        android:text="Body Type"
+                        android:textSize="@dimen/sp_14" />
+                <EditText
+                        android:id="@+id/edtv_body_type"
+                        style="@style/edit_profile"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:focusableInTouchMode="false"
+                        android:hint="Body Type" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                    style="@style/layout_profile" >
+
+                <TextView
+                        style="@style/txt_base"
+                        android:layout_width="0dp"
+                        android:layout_weight=".40"
+                        android:padding="@dimen/dp_5"
+                        android:text="Looking For"
+                        android:textSize="@dimen/sp_14" />
+                <EditText
+                        android:id="@+id/edtv_looking_for"
+                        style="@style/edit_profile"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:focusableInTouchMode="false"
+                        android:hint="Looking For" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                    android:visibility="gone"
+                    style="@style/layout_profile" >
+
+                <TextView
+                        style="@style/txt_base"
+                        android:layout_width="0dp"
+                        android:layout_weight=".40"
+                        android:padding="@dimen/dp_5"
+                        android:text="Relationship"
+                        android:textSize="@dimen/sp_14" />
+                <EditText
+                        android:id="@+id/edtv_relationship"
+                        style="@style/edit_profile"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:focusableInTouchMode="false"
+                        android:hint="Relationship" />
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                    style="@style/layout_profile" >
+
+                <TextView
+                        style="@style/txt_base"
+                        android:layout_width="0dp"
+                        android:layout_weight=".40"
+                        android:padding="@dimen/dp_5"
+                        android:text="Sexual Role"
+                        android:textSize="@dimen/sp_14" />
+                <EditText
+                        android:id="@+id/edtv_sexual_role"
+                        style="@style/edit_profile"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:focusableInTouchMode="false"
+                        android:hint="Sexual Role" />
+
+            </LinearLayout>
+
+
+            <Button
+                    android:id="@+id/btn_save_filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/ok_button_no_txt"
+                    android:padding="@dimen/dp_10"
+                    android:textSize="@dimen/sp_14"
+                    android:text="Apply Filter"
+                    android:textColor="@android:color/white" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
